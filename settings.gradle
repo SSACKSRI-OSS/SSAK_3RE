@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "SSAK3_RE"
