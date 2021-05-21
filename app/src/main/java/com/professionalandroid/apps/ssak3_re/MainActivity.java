@@ -2,6 +2,7 @@ package com.professionalandroid.apps.ssak3_re;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity implements Button.OnClickListener {
 
     ImageButton Ibutton;
@@ -19,12 +21,17 @@ public class MainActivity extends AppCompatActivity implements Button.OnClickLis
     Button Cbutton;
     Button Mbutton;
     Button email;
+    Adapter adapter;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        viewPager = (ViewPager)findViewById(R.id.view);
+        adapter = new Adapter(this);
+        viewPager.setAdapter(adapter);
         Log.i("on","onCreate");
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
         Ibutton = (ImageButton)findViewById(R.id.Information);
