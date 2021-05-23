@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SSAK3_RE">
-        <activity android:name=".Sugetion"></activity>
+        <activity android:name=".Vinyl"></activity>
+        <activity android:name=".Stiropom" />
+        <activity android:name=".Plastic" />
+        <activity android:name=".Paper" />
+        <activity android:name=".Glass" />
+        <activity android:name=".can" />
+        <activity android:name=".Sugetion" />
         <activity android:name=".Memo" />
         <activity android:name=".Calender" />
         <activity android:name=".Search" />
